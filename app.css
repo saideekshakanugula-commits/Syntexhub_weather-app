@@ -1,0 +1,84 @@
+body {
+}
+
+.dark-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-box {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #0077ff;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  width: 320px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  width: 170px;
+  border-radius: 12px;
+}
+
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.history {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .forecast-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-card {
+    width: 90%;
+  }
+}
